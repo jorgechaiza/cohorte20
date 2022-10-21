@@ -1,0 +1,35 @@
+/* p{
+    color: blueviolet;
+}
+pre{
+    color: aqua;
+} */
+
+/*SELECTOR UNIVERSAL*/
+*{
+    color:rgb(22, 21, 19);
+}
+/*SELECTOR DE TIPO*/
+em{
+    color:crimson;
+}
+span {
+    color: chartreuse;
+}
+
+/*SELECTOR DE CLASE*/
+.titulo {
+    color: blue;
+}
+
+.bl {
+    float: right;
+    color: aliceblue;
+    background-color: blueviolet;
+    font-size: large;
+}
+
+/*SELECTOR DE ID*/
+#selector {
+    color: rgb(245, 220, 225);
+}
