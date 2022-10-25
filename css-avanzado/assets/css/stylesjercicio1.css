@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;400;700&family=Fasthand&family=Shalimar&display=swap');
+
+
+
+header{
+    font-family: 'Fasthand', cursive;
+    font-size: 30px;
+}
+
+.indice{
+    font-family: cursive;
+}
+
+.texto{
+    font-family: 'Shalimar', cursive;
+}

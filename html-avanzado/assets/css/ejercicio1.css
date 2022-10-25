@@ -1,0 +1,40 @@
+form{
+    display: inline-block;
+    padding: 50px;
+    width: 350px;
+    background-color: green;
+    color: white;
+    border-color: aqua;
+    border-left: 5px solid cyan;
+    border-right: 5px solid cyan;
+    border-top: 5px solid cyan;
+    border-bottom: 5px solid cyan;
+    border-radius: 5px;
+   
+}
+
+label{
+    display: inline-block;
+    width: 100px;
+    margin-left: 50px;
+    font-weight: 200;
+    color: white;
+    
+}
+
+.campo{
+    
+    border-left: 2px solid red;
+    border-right: 2px solid red;
+    border-top: 2px solid red;
+    border-bottom: 2px solid red;
+}
+
+
+.linea {
+    border-top: 2px dashed;
+    height: 10px;
+    max-width: 200px;
+    padding: 0;
+    margin: 20px auto 0 0;
+  }
