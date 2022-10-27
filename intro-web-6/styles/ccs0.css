@@ -1,0 +1,33 @@
+/* .container{
+    background-color: blueviolet;
+    margin-top: 20px;
+} */
+
+/* .container{
+    margin-top: 20px;
+} */
+.uno{
+    background-color: aqua;
+}
+.dos{
+    background-color: bisque;
+}
+.tres{
+    background-color: chartreuse;
+}
+body{
+    padding: 30px;
+}
+
+.puno{
+    background-color: brown;
+}
+.pdos{
+    background-color: crimson;
+}
+.ptres{
+    background-color: darkmagenta;
+}
+.pcuatro{
+    background-color: salmon;
+}

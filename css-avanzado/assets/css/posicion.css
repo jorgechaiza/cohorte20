@@ -1,0 +1,52 @@
+
+/* position: static; */
+/* relative, tiene como base la posición original del elemento */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.padre{
+    border: 3px dashed green;
+
+/*     border-width: ;
+    border-top-width: ;
+    border-bottom-color: ; */
+/*     position: relative; */
+    height: 800px;
+}
+
+
+.cuadro{
+    border: 2px solid blue;
+    width: 200px;
+    height: 200px;
+    /* display: inline-flex
+ */
+}
+
+.uno{
+    background-color: blue;
+   /*  position: relative; */
+    /* top, left, bottom, right */
+    /* top: -50px; */
+    /* right: 100px; */
+    /* z-index: 11; */
+}
+
+.dos{
+    background-color: red;
+    /* absolute: retira el elemento del flujo normal del documento
+     */
+    position: absolute;
+    left: 100px;
+    bottom: 100px;
+    
+}
+
+.tres{
+    background-color: green;
+    position: sticky;
+    top: 20px;
+}
