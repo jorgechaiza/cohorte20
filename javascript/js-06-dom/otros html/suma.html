@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suma</title>
+</head>
+<body>
+    <h1>Calculadora</h1>
+
+    <form id="formulario">
+        Numero1 <input type="number" name="numero1" value="1"><br/>
+        Numero2 <input type="number" name="numero2" value="2">
+    </form>
+    <button onclick="Calcular()">Calcular</button>
+
+    <div id="suma"></div>
+
+
+    <script>
+        function Calcular() {
+    let formulario = document.forms["formulario"]
+    let suma = 0;
+    for (let elemento of formulario){
+        suma += Number(elemento.value);
+    }
+    document.getElementById("suma").innerHTML = suma;
+
+    
+}
+    </script>
+
+</body>
+</html>
