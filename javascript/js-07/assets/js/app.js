@@ -34,3 +34,30 @@ console.log(document.body);
 
 
 
+const cartaPokemon = document.getElementById("pokemon");
+const nombrePokemon = document.getElementById("nombre")
+const imagen = document.getElementById(img)
+
+const url = "https://pokeapi.co/api/v2/pokemon/25";
+
+const pokedex = async () => {
+    try {
+
+        const respuesta = await fetch(url).json;
+        const pokemon = await respuesta.json();
+
+        console.log(pokemon.name);
+
+        nombrePokemon.textContent = pokemon.name;
+
+        const datos = {
+            nombre: pokemon.name,
+            imagen: pokemon.sprites.other.official-artwork.front_default,
+        }
+
+    } catch (error) {
+        
+    }
+}
+
+pokedex();
