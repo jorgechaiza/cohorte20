@@ -1,0 +1,20 @@
+body{
+    overflow-x: hidden;
+}
+
+/* .altura-img{
+    height: 100vh; /* 50vw
+    } */
+   
+.altura-img{
+    height: calc(100vh - 56px);
+}
+
+/* @media(){
+
+} */   /* Para volver resoponsivas las imágenes
+ */
+
+.imagen{
+    height: 20rem;
+}
