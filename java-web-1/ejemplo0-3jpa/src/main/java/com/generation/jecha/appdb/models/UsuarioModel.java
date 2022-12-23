@@ -1,10 +1,15 @@
 package com.generation.jecha.appdb.models;
 
+import java.util.ArrayList;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.ManyToOne;
+import jakarta.persistence.OneToMany;
+import jakarta.persistence.OneToOne;
 import jakarta.persistence.Table;
 
 @Entity
@@ -17,7 +22,17 @@ public class UsuarioModel {
 	private String nombre;
 	private String email;
 	private Integer prioridad;
-
+	
+	/*****************relaciones************************/
+	
+	@OneToMany(mappedBy = "usuario")  // un usuario a muchos productos.
+	private ArrayList<ProductoModel> productos;
+	
+	@OneToMany(mappedBy = "usuario") // un usuario a muchas ordenes.
+	private ArrayList<OrdenModel> ordenes;
+	
+	/***************************************************/
+	
 	public UsuarioModel() {
 	}
 
@@ -60,4 +75,23 @@ public class UsuarioModel {
 		this.prioridad = prioridad;
 	}
 
+	public ArrayList<ProductoModel> getProductos() {
+		return productos;
+	}
+
+	public void setProductos(ArrayList<ProductoModel> productos) {
+		this.productos = productos;
+	}
+
+	public ArrayList<OrdenModel> getOrdenes() {
+		return ordenes;
+	}
+
+	public void setOrdenes(ArrayList<OrdenModel> ordenes) {
+		this.ordenes = ordenes;
+	}
+
+	
+	
+	
 }
